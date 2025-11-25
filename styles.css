@@ -308,3 +308,96 @@ body {
     grid-column: span 2;
 }
     
+.works-section {
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 1500px;
+    margin: 0 auto 120px;
+}
+
+.works-section h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--grey-20);
+    margin-bottom: 10px;
+}
+
+.works-section .subtitle {
+    font-size: 18px;
+    color: var(--grey-30);
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 40px;
+    justify-content: center;
+}
+
+.works-section .card {
+    background-color: var(--peach-96);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease;
+}
+
+.works-section .card:hover {
+    transform: translateY(-6px);
+}
+
+.works-section .card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--grey-20);
+}
+
+.works-section .main-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.thumbs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.thumbs img {
+    width: 90px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.thumbs img:hover {
+    opacity: 1;
+}
+
+/* Button */
+.button-container {
+    margin-top: 50px;
+    color: #7b2aff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 38px;
+    border-radius: 8px;
+    background-color: var(--grey-20);
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
