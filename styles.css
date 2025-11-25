@@ -570,6 +570,12 @@ body {
     .copyright {
         font-size: 13px;
     }
+
+    .Contact-Me {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
     
   
