@@ -433,4 +433,339 @@ body {
     flex-direction: row;
     justify-content: center;
   }
+
+/* Móviles muy pequeños (gama baja: hasta 320px) - Ej. iPhone 4, móviles antiguos */
+@media only screen and (max-width: 320px) {
+    .container {
+        padding: 5px;
+        margin: 0 5px;
+    }
     
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+        padding: 0;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    
+    .grid-item {
+        padding: 10px;
+    }
+    
+    h1 { font-size: 18px; }
+    h2 { font-size: 16px; }
+    p { font-size: 12px; }
+    
+    .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    form { gap: 8px; }
+    input, textarea, select {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    img { width: 100%; margin-bottom: 5px; }
+    footer { padding: 10px 0; font-size: 12px; }
+}
+
+/* Móviles pequeños (gama baja/media: 321px - 480px) - Ej. iPhone SE, móviles básicos */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .container {
+        padding: 8px;
+        margin: 0 5px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .grid-item { padding: 12px; }
+    
+    h1 { font-size: 20px; }
+    h2 { font-size: 18px; }
+    p { font-size: 14px; }
+    
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    form { gap: 10px; }
+    input, textarea, select {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    img { width: 100%; margin-bottom: 8px; }
+    footer { padding: 12px 0; font-size: 14px; }
+}
+
+/* Móviles grandes/Tablets pequeñas (gama media: 481px - 600px) - Ej. iPhone 12, tablets básicas */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 0 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .grid-item { padding: 15px; }
+    
+    h1 { font-size: 22px; }
+    h2 { font-size: 20px; }
+    p { font-size: 16px; }
+    
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    form { gap: 12px; }
+    input, textarea, select {
+        padding: 12px;
+    }
+    
+    img { width: 100%; margin-bottom: 10px; }
+    footer { padding: 15px 0; }
+}
+
+/* Tablets pequeñas (gama media: 601px - 768px) - Ej. iPad mini, tablets estándar */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 768px;
+    }
+    
+    nav ul {
+        gap: 15px;
+    }
+    
+    .flex-container {
+        gap: 15px;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .grid-item { padding: 18px; }
+    
+    h1 { font-size: 26px; }
+    h2 { font-size: 22px; }
+    p { font-size: 16px; }
+    
+    .btn {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    
+    form { gap: 12px; }
+    input, textarea, select { padding: 12px; }
+    
+    footer { padding: 18px 0; }
+}
+
+/* Tablets grandes (gama media: 769px - 1024px) - Ej. iPad Pro 10.5, laptops pequeñas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 20px;
+        max-width: 1024px;
+    }
+    
+    nav ul { gap: 18px; }
+    
+    .flex-container { gap: 18px; }
+    
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+    
+    .grid-item { padding: 20px; }
+    
+    h1 { font-size: 28px; }
+    h2 { font-size: 24px; }
+    p { font-size: 18px; }
+    
+    .btn {
+        padding: 14px 20px;
+        font-size: 18px;
+    }
+    
+    form { gap: 15px; }
+    input, textarea, select { padding: 14px; }
+    
+    footer { padding: 20px 0; }
+}
+
+/* Desktops pequeños (gama alta: 1025px - 1200px) - Ej. laptops estándar, monitores 1080p */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .container {
+        padding: 25px;
+        max-width: 1200px;
+    }
+    
+    nav ul { gap: 20px; }
+    
+    .flex-container { gap: 20px; }
+    
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .grid-item { padding: 22px; }
+    
+    h1 { font-size: 30px; }
+    h2 { font-size: 26px; }
+    p { font-size: 18px; }
+    
+    .btn {
+        padding: 14px 22px;
+        font-size: 18px;
+    }
+    
+    form { gap: 15px; }
+    input, textarea, select { padding: 14px; }
+    
+    footer { padding: 25px 0; }
+}
+
+/* Desktops medianos (gama alta: 1201px - 1440px) - Ej. monitores 1440p */
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    .container {
+        padding: 30px;
+        max-width: 1400px;
+    }
+    
+    nav ul { gap: 25px; }
+    
+    .flex-container { gap: 25px; }
+    
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+    
+    .grid-item { padding: 25px; }
+    
+    h1 { font-size: 32px; }
+    h2 { font-size: 28px; }
+    p { font-size: 20px; }
+    
+    .btn {
+        padding: 16px 24px;
+        font-size: 20px;
+    }
+    
+    form { gap: 18px; }
+    input, textarea, select { padding: 16px; }
+    
+    footer { padding: 30px 0; }
+}
+
+/* Desktops grandes (gama alta: 1441px - 1920px) - Ej. monitores 4K estándar */
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+    .container {
+        padding: 35px;
+        max-width: 1800px;
+    }
+    
+    nav ul { gap: 30px; }
+    
+    .flex-container { gap: 30px; }
+    
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+    }
+    
+    .grid-item { padding: 28px; }
+    
+    h1 { font-size: 36px; }
+    h2 { font-size: 30px; }
+    p { font-size: 22px; }
+    
+    .btn {
+        padding: 18px 26px;
+        font-size: 22px;
+    }
+    
+    form { gap: 20px; }
+    input, textarea, select { padding: 18px; }
+    
+    footer { padding: 35px 0; }
+}
+
+/* Pantallas ultra grandes (gama alta: 1921px+) - Ej. monitores 4K+, TVs */
+@media only screen and (min-width: 1921px) {
+    .container {
+        padding: 40px;
+        max-width: 2200px;
+    }
+    
+    nav ul { gap: 35px; }
+    
+    .flex-container { gap: 35px; }
+    
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 35px;
+    }
+    
+    .grid-item { padding: 30px; }
+    
+    h1 { font-size: 40px; }
+    h2 { font-size: 32px; }
+    p { font-size: 24px; }
+    
+    .btn {
+        padding: 20px 28px;
+        font-size: 24px;
+    }
+    
+    form { gap: 22px; }
+    input, textarea, select { padding: 20px; }
+    
+    footer { padding: 40px 0; }
+}
