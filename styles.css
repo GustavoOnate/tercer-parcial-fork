@@ -437,7 +437,8 @@ body {
 
 
   @media /*moviles*/ (min-width: 375px) and (max-width: 768px) {
-.FAQ-body {
+
+    .FAQ-body {
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -455,6 +456,12 @@ body {
         padding: 30px;
         width: 100%;
         max-width: 600px;
+    }
+
+    .Contact-Me {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     body {
@@ -485,6 +492,10 @@ body {
 
     .wide, .narrow {
         grid-column: span 1;
+    }
+
+    .estrella{
+        padding-left: 40%;
     }
 
     .footer-section {
@@ -533,6 +544,32 @@ body {
     }
 }
 
+@media  /*tabletas y laptops*/ (min-width: 769px) and (max-width: 1440px) {
+    .footer-section {
+        margin-top: 60px;
+        padding: 35px 0;
+    }
 
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto 30px;
+        padding: 0 40px;
+    }
+
+    .footer-menu {
+        gap: 20px;
+        font-size: 15px;
+    }
+
+    .redes {
+        gap: 12px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}
     
   
