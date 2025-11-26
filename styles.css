@@ -1087,3 +1087,29 @@ position: absolute;
     width: 758px;
 }
 
+@media (max-width: 992px) {
+    .heroabout {
+        flex-direction: column; 
+        width: 90%; 
+        padding-top: 60px;
+        gap: 40px;
+    }
+
+    .heroaboutdescription {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .welcome {
+        width: 100%; 
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .aboutstats {
+        justify-content: center; 
+        gap: 25px;
+        margin-top: 30px;
+    }
+}
+
